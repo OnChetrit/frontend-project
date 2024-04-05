@@ -1,0 +1,165 @@
+// Colors
+$primary: #7d7fc2;
+$primary-dark: #1fcf54;
+$secondary: #1f48cf;
+$text: #333333;
+$text-dark: #ecf0f1;
+$background: #efefef;
+$background-dark: #1f2c38;
+$black: #000000;
+$white: #ffffff5a;
+$gray: #95a5a6;
+$gray-dark: #34495e;
+$accent-teal: #1abc9c;
+// $gray-lighter: #f2f2f2;
+// $gray-lightest: #fafafa;
+$success: #1fcfa5;
+$warning: #f1c40f;
+$danger: #e74c3c;
+$info: #3498db;
+// $primary-dark: #2c3e50; // Main primary dark color
+// $dark-gray: #34495e; // Dark gray shade
+// $light-gray: #95a5a6; // Light gray shade
+// $text-light: #ecf0f1;          // Light text color
+// $background-dark: #1f2c38;     // Dark background color
+
+// Additional shades if needed
+$extra-light-gray: #bdc3c7; // Extra light gray shade
+$extra-dark-gray: #17202a; // Extra dark gray shade
+
+// Breakpoints
+$mobile: 460px;
+$tablet: 760px;
+$laptop: 960px;
+$desktop: 1280px;
+$wide: 1450px;
+
+// Spacing
+$xs: 0.25rem; // 4px
+$sm: 0.5rem; // 8px
+$md: 1rem; // 16px
+$lg: 1.5rem; // 24px
+$xl: 2rem; // 32px
+$xxl: 3rem; // 48px
+
+// Padding
+$padding: (
+  xs: $xs,
+  sm: $sm,
+  md: $md,
+  lg: $lg,
+  xl: $xl,
+  xxl: $xxl,
+);
+
+$drop-shadow: (
+  md: 2px 4px 6px black,
+);
+
+$max-width: (
+  modal: 350px,
+  site: 1200px,
+);
+
+// Z-index
+$z-index: (
+  tooltip: 200,
+  toast: 300,
+  backdrop: 400,
+  fixed: 500,
+  sticky: 600,
+  dropdown: 700,
+  navbar: 800,
+  modal-backdrop: 900,
+  modal: 1000,
+);
+
+// Shadows
+$shadow: (
+  sm: 0 0 10px 0 darken($background, 5%),
+  md: 0 0 10px 0 darken($background, 5%),
+  lg: 0 0 10px 0 darken($background, 5%),
+  xl: 0 0 10px 0 darken($background, 5%),
+  xxl: 0 0 48px 0 darken($background, 5%),
+);
+
+// Transitions
+$transition: (
+  ease-in-out: cubic-bezier(0.4, 0, 0.2, 1),
+  ease-in: cubic-bezier(0.4, 0, 1, 1),
+  ease-out: cubic-bezier(0, 0, 0.2, 1),
+  sharp: cubic-bezier(0.4, 0, 0.6, 1),
+);
+
+// Border radius
+$border-radius: (
+  sm: $sm,
+  md: $md,
+  lg: $lg,
+  xl: $xl,
+  xxl: $xxl,
+);
+
+// Font sizes
+$font-size: (
+  xs: 0.75rem /* 12px */,
+  sm: 0.875rem /* 14px */,
+  md: 1rem /* 16px */,
+  lg: 1.125rem /* 18px */,
+  xl: 1.25rem /* 20px */,
+  xxl: 1.5rem /* 24px */,
+  xxxl: 2rem /* 30px */,
+  xxxxl: 2.5rem /* 36px */,
+  xxxxxl: 3.5rem /* 36px */,
+);
+
+// Font weights
+$font-weight: (
+  thin: 100,
+  light: 300,
+  regular: 400,
+  medium: 500,
+  bold: 700,
+  black: 900,
+);
+
+// Line heights
+$line-height: (
+  xs: 1,
+  sm: 1.25,
+  md: 1.5,
+  lg: 1.75,
+  xl: 2,
+  xxl: 2.5,
+);
+
+:export {
+  primary: $primary;
+  secondary: $secondary;
+  text: $text;
+  textDark: $text-dark;
+  background: $background;
+  backgroundDark: $background-dark;
+  black: $black;
+  white: $white;
+  gray: $gray;
+  grayDark: $gray-dark;
+  // grayLight: $gray-light;
+  // grayLighter: $gray-lighter;
+  // grayLightest: $gray-lightest;
+  success: $success;
+  warning: $warning;
+  danger: $danger;
+  info: $info;
+  mobile: $mobile;
+  tablet: $tablet;
+  laptop: $laptop;
+  desktop: $desktop;
+  wide: $wide;
+  xs: $xs;
+  sm: $sm;
+  md: $md;
+  lg: $lg;
+  xl: $xl;
+  xxl: $xxl;
+}

@@ -1,0 +1,57 @@
+@use "@variables" as *;
+
+/* View */
+@mixin max-mobile {
+    @media (max-width: $mobile) {
+        @content;
+    }
+}
+
+@mixin mobile {
+    @media (min-width: $mobile) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media (min-width: $tablet) {
+        @content;
+    }
+}
+
+@mixin laptop {
+    @media (min-width: $laptop) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media (min-width: $desktop) {
+        @content;
+    }
+}
+
+@mixin wide {
+    @media (min-width: $wide) {
+        @content;
+    }
+}
+
+/* Dark mode */
+@mixin dark {
+    @media (prefers-color-scheme: dark) {
+        @content;
+    }
+
+    :global(.dark) {
+        @content;
+    }
+}
+
+@mixin rtl($property, $ltr-value, $rtl-value) {
+    #{$property}: $ltr-value;
+
+    [dir="rtl"] & {
+        #{$property}: $rtl-value;
+    }
+}

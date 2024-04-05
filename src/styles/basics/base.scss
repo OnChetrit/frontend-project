@@ -1,0 +1,77 @@
+@use "@utils" as *;
+
+* {
+    box-sizing: border-box;
+    &::selection {
+        color: $background;
+        background-color: $text;
+
+        @include dark {
+            color: $background-dark;
+            background-color: $text-dark;
+        }
+    }
+}
+
+html {
+    // font-family: almoni;
+}
+
+body {
+    margin: 0;
+    background-color: $background;
+    color: $text;
+    min-height: 100vh;
+    overscroll-behavior: none;
+    overflow-x: hidden;
+    font-size: clamp(1.2rem, 2.5vw, 1.5rem);
+
+    @include dark {
+        background-color: $background-dark;
+        color: $text-dark;
+    }
+
+    &.modal-open {
+        overflow: hidden;
+    }
+}
+
+button {
+    all: unset;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+a {
+    color: inherit;
+    // color: $accent-teal;
+    text-decoration: none;
+    line-height: 1;
+    height: min-content;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+ul,
+ol,
+dl,
+li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    font-weight: normal;
+}
